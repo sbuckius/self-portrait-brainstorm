@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Self Portrait with Code Brainstorm</title>
+  <style>
+    :root { --maxw: 900px; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 0; background:#0b0b10; color:#e9eef5; }
+    header { max-width: var(--maxw); margin: 24px auto 8px; padding: 0 16px; }
+    .app { max-width: var(--maxw); margin: 0 auto 64px; padding: 0 16px; }
+    .row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+    .card { background: #151823; border: 1px solid #1f2433; border-radius: 16px; padding: 16px; box-shadow: 0 6px 18px rgba(0,0,0,.25); }
+    .toolbar { position: sticky; top: 0; backdrop-filter: blur(6px); background: rgba(11,11,16,.65); border-bottom: 1px solid #1f2433; padding: 10px 16px; z-index: 5; }
+    button { cursor: pointer; border: 1px solid #2a3247; background: #1b2130; color: #e9eef5; padding: 10px 14px; border-radius: 12px; font-weight: 600; }
+    button:hover { background: #222a3d; }
+    button.danger { border-color: #51303a; background: #371923; }
+    button.danger:hover { background: #441f2a; }
+    textarea { width: 100%; min-height: 90px; resize: vertical; padding: 10px 12px; border-radius: 12px; border: 1px solid #2a3247; background: #0f121a; color: #e9eef5; }
+    .q { margin: 12px 0 4px; font-weight: 700; }
+    .muted { color: #9fb0c3; font-size: 13px; }
+    .pair { margin-bottom: 12px; }
+    .subq { margin-left: 20px; border-left: 3px solid #26324a; padding-left: 12px; border-radius: 8px; }
+    .pair-label { font-weight: 800; margin: 0 0 8px; opacity: .9; }
+    .inner { padding: 4px 0 8px; }
+    .resp-list { margin-top: 10px; padding-left: 18px; }
+    .resp-list li { margin: 8px 0; }
+    code.small { font-size: 12px; color: #d0e2ff; background: #0c1020; padding: 2px 6px; border-radius: 8px; }
+    .pill { display:inline-flex; align-items:center; gap:8px; padding:6px 10px; border:1px solid #21314a; border-radius:999px; background:#10192a; font-size:12px; color:#b7c7dd; }
+    .grid { display:grid; grid-template-columns: 1fr; gap:12px; }
+    @media (min-width: 768px) { .grid { grid-template-columns: 1fr 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Self Portrait with Code Brainstorm</h1>
+    
+  </header>
+
+  <div class="toolbar row">
+    <span class="pill">Anon ID: <code id="anon" class="small">(init)</code></span>
+    <div style="flex:1"></div>
+    <button id="exportBtn">Export All (JSON)</button>
+    <button id="exportCsvBtn">Export All (CSV)</button>
+    <button id="resetBtn" class="danger">Reset My Inputs</button>
+  </div>
+
+  <main class="app">
+    <div id="p5-holder" class="card"></div>
+    <div id="questions" class="card"></div>
+  </main>
+
+  <!-- p5.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <!-- App code -->
+  <script type="module" src="self_portrait_group_brainstorm.js"></script>
+</body>
+</html>
