@@ -98,7 +98,13 @@ const pairs = [
   ["Imagine yourself as a robot. What do you look like? Why?", followUp],
   ["Imagine a version of you that reveals something about your lived experience. What do you look like? Why?", followUp],
   ["Imagine yourself as a collage. What do you look like? Why?", followUp],
-  ["Imagine yourself as a object. What do you look like? Why?", followUp]
+  ["Imagine yourself as a object. What do you look like? Why?", followUp],
+  ["What is something that you do everyday. What do you look like when you perform this task?", followUp],
+  ["What is something that is very important to you. How could you depict this idea? How could you depict this idea as a “portrait”?", followUp],
+  ["What expression do you make often? How could you depict this expression? What does this expression reveal about you?", followUp],
+  ["What makes you unique? How could you depict this uniqueness in an image?", followUp],
+  ["What color/s represent you? How could you depict yourself with this color?", followUp],
+  ["What cultural events shape your identity? How could you depict these in a portrait of you? ", followUp],
 ];
 // Fill to 30 with the lived-experience pair
 while (pairs.length < 30) {
