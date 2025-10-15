@@ -114,7 +114,10 @@ const pairs = [
   ["What is a strong opinion that you have? How can you make a portrait of yourself that reveals this opinion?", followUp],
   ["Think of a political view that you hold. How can you make a portrait of yourself that reveals this view?", followUp],
   ["Who is your favorite artist? What would a self-portrait look like if you made it in their style?", followUp],
-  ["What is a word that describes you? How can you make a self-portrait that shows this concept?", followUp]
+  ["What is your favorite photograph of yourself?", followUp],
+  ["What is your favorite poster? How could you make a portrait of you in that style?", followUp],
+  ["What is a word that describes you? How can you make a self-portrait that shows this concept?", followUp],
+  ["What is your favorite hobby? How could you make a portrait of with this in mind?", followUp]
 ];
 // Fill to 30 with the lived-experience pair
 while (pairs.length < 30) {
