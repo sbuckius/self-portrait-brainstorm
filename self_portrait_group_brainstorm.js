@@ -104,7 +104,17 @@ const pairs = [
   ["What expression do you make often? How could you depict this expression? What does this expression reveal about you?", followUp],
   ["What makes you unique? How could you depict this uniqueness in an image?", followUp],
   ["What color/s represent you? How could you depict yourself with this color?", followUp],
-  ["What cultural events shape your identity? How could you depict these in a portrait of you? ", followUp],
+  ["What cultural events shape your identity? How could you depict these in a portrait of you?", followUp],
+  ["Imagine if you could tell a story with your face. What would this look like?", followUp],
+  ["What is your favorite song? How could you depict this song through a portrait?", followUp],
+  ["Who is your hero? How can you depict yourself as your hero? What similarities do you share?", followUp],
+  ["What is your favorite poem? Why? How could you express a similar idea through a portrait of you?", followUp],
+  ["What is your favorite place? How could you show this through a portrait of you? ", followUp],
+  ["What is your favorite or least favorite selfie of you? What do either of these images reveal about you? How can you translate that into a portrait?", followUp],
+  ["What is a strong opinion that you have? How can you make a portrait of yourself that reveals this opinion?", followUp],
+  ["Think of a political view that you hold. How can you make a portrait of yourself that reveals this view?", followUp],
+  ["Who is your favorite artist? What would a self-portrait look like if you made it in their style?", followUp],
+  ["What is a word that describes you? How can you make a self-portrait that shows this concept?", followUp]
 ];
 // Fill to 30 with the lived-experience pair
 while (pairs.length < 30) {
